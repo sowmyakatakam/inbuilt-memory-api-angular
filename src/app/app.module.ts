@@ -7,6 +7,7 @@ import { InMemoryWebApiModule  } from 'angular-in-memory-web-api';
 import { BackendService } from './backend.service';
 import { ContactListComponent } from './contact-list/contact-list.component';
 import { ContactDetailsComponent } from './contact-details/contact-details.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ContactDetailsComponent } from './contact-details/contact-details.compo
   imports: [
     BrowserModule,
     AppRoutingModule,
-    InMemoryWebApiModule.forRoot(BackendService)
+    InMemoryWebApiModule.forRoot(BackendService),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

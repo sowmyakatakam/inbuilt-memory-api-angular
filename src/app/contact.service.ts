@@ -6,11 +6,11 @@ import { Injectable } from '@angular/core';
 })
 export class ContactService {
 
-  API_URL: string ="api";
+  API_URL: string ='/contacts';
 
   constructor(private http: HttpClient) { }
   getContacts(){
-    return this.http.get(this.API_URL + 'contacts')
+    return this.http.get(this.API_URL)
   }
 
   getContact(contactId: any){
