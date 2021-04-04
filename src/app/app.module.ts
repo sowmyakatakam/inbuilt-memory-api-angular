@@ -8,12 +8,14 @@ import { BackendService } from './backend.service';
 import { ContactListComponent } from './contact-list/contact-list.component';
 import { ContactDetailsComponent } from './contact-details/contact-details.component';
 import { HttpClientModule } from '@angular/common/http';
+import { MainpageComponent } from './mainpage/mainpage.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ContactListComponent,
-    ContactDetailsComponent
+    ContactDetailsComponent,
+    MainpageComponent
   ],
   imports: [
     BrowserModule,
