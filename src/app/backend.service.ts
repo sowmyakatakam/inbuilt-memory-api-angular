@@ -8,15 +8,16 @@ import { Observable } from 'rxjs';
 export class BackendService implements InMemoryDbService{
 
   constructor() { }
-  createDb(reqInfo?: RequestInfo): {} | Observable<{}> | Promise<{}> {
-    throw new Error('Method not implemented.');
+  createDb(reqInfo?: RequestInfo): {} | Observable<{}> | Promise<{}> 
+    {
 
-    let data = [
+    let contacts = [
       { id: 1, name: 'sowmya', email: 'sowmya@gmail.com'},
       { id: 2, name: 'druvitha', email: 'druvitha@gmail.com'},
       { id: 3, name: 'sai', email: 'sai@gmail.com'},
       { id: 4, name: 'balu', email: 'balu@gmail.com'}
     ];
-    return {data};
+    return {contacts};
   }
+  
 }
